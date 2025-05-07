@@ -7,8 +7,11 @@ def decoreer(tekst = ""):
     print()
 
 def fooi_pp(bedrag, personen):
-    try:
-        berdrag_pp = bedrag/personen
-    except:
-        berdrag_pp = "??"
-    return f"Het bedrag per persoon is {berdrag_pp} euro"
+    bedrag_pp = bedrag/personen
+    return f"Het bedrag per persoon is {bedrag_pp} euro"
+
+def onderstreep(tekst):
+    uit = []
+    uit.append(tekst)
+    uit.append("="*len(tekst))
+    return uit
