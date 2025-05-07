@@ -15,3 +15,10 @@ def onderstreep(tekst):
     uit.append(tekst)
     uit.append("="*len(tekst))
     return uit
+
+def som(subtotalen):
+    totaal = 0
+    for subtotaal in subtotalen:
+        totaal += subtotalen[subtotaal]
+    return totaal
+
